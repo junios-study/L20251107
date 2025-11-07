@@ -75,7 +75,6 @@ void AMyPawn::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	AddMovementInput(GetActorForwardVector());
-
 	Left->AddLocalRotation(FRotator(0, 0, 3600.0f * DeltaTime));
 	Right->AddLocalRotation(FRotator(0, 0, 3600.0f * DeltaTime));
 }
